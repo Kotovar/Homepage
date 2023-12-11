@@ -1,0 +1,18 @@
+{
+	// "plugins": ["@stylistic/js"],
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": "xo",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"rules": {
+		"prefer-template": "error",
+		"capitalized-comments": "off",
+		"arrow-parens": ["error", "always"],
+		"operator-linebreak": 0
+	}
+}
