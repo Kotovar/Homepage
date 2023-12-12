@@ -3,3 +3,100 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+// переменные
+:root {
+	// цвета
+	--color-header: rgb(51, 52, 116);
+	--color-main: rgb(176, 177, 238);
+	--color-font-panel: white;
+
+	// размеры
+	--height-right-panel: 40vh;
+	--font-size-panel: calc(var(--height-right-panel) / 8);
+
+	// отступы
+	--padding-panel: 0 calc(1vw + 10px);
+
+	// тени
+	--shadow-main: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+// переменные sass
+$angle-diagonal: 35deg;
+
+// миксин для генерации угла
+@mixin diagonal-container($angle, $direction) {
+	$points: ();
+	$percent-width: tan($angle) * 100;
+	$percent-height: tan($angle) * 100;
+	@if $direction == top-left {
+		$points: (0 0, 100% 0, 100% $percent-width, 0% 100%);
+	} @else if $direction == top-right {
+		$points: (0 0, 100% 0, 100% 100%, 0% (100% - $percent-width));
+	} @else if $direction == bottom-left {
+		$points: (0 0, 100% ($percent-height - 100%), 100% 100%, 0% 100%);
+	} @else if $direction == bottom-right {
+		$points: (0 ($percent-height - 100%), 100% 0, 100% 100%, 0% 100%);
+	}
+	clip-path: polygon($points);
+}
+
+// значок переключения тёмной темы с анимацией
+.theme_toggler {
+	height: 5vh;
+	width: calc(8vw + 30px);
+	background-color: var(--color-font-panel);
+	border-radius: 20px;
+	margin: 2vh;
+}
+
+header {
+	position: relative;
+	display: flex;
+	height: var(--height-right-panel);
+	z-index: 2;
+	align-items: stretch;
+	justify-content: space-between;
+	filter: drop-shadow(var(--shadow-main));
+
+	&:before {
+		position: absolute;
+		z-index: -1;
+		inset: 0;
+		background-color: var(--color-header);
+		@include diagonal-container($angle-diagonal, top-right);
+		content: '';
+	}
+
+	.#{&}__panel {
+		height: calc(var(--height-right-panel) * 0.9);
+		padding: var(--padding-panel);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	a {
+		text-shadow: var(--shadow-main);
+		text-decoration: none;
+		color: var(--color-font-panel);
+		font-size: var(--font-size-panel);
+	}
+}
+
+main {
+	position: relative;
+	background-color: var(--color-main);
+	height: 100vh;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-color: var(--color-main);
+		inset: calc(var(--height-right-panel) * -1) 0 0 0;
+		z-index: 1;
+	}
+}
