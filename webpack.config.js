@@ -6,8 +6,19 @@ module.exports = {
 	entry: './src/index.js',
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: 'Output Management',
+			filename: 'index.html',
 			template: './src/main.html',
+			chunks: ['main'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'about.html',
+			template: './src/about.html',
+			chunks: ['main'],
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'projects.html',
+			template: './src/projects.html',
+			chunks: ['main'],
 		}),
 	],
 	devtool: 'inline-source-map',
