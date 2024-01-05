@@ -10,17 +10,26 @@
 	--color-header: rgb(51, 52, 116);
 	--color-main: rgb(176, 177, 238);
 	--color-font-panel: white;
+	--color-font-main: black;
 	--color-current-page: rgb(153, 204, 255);
+	--color-border-avatar: rgba(255, 255, 255, 0.575);
 
 	// размеры
 	--height-right-panel: 40vh;
 	--font-size-panel: calc(var(--height-right-panel) / 8);
+	--font-size-greetings: 2.5rem;
+	--font-size-name: calc(var(--font-size-greetings) * 2.5);
+	--font-size-description: calc(var(--font-size-greetings) * 0.7);
 
 	// отступы
 	--padding-panel: 0 calc(1vw + 10px);
+	// --margin-avatar: 5%;
 
 	// тени
 	--shadow-main: 5px 5px 10px rgba(0, 0, 0, 0.7);
+
+	// рамки
+	--border-avatar: 7px solid var(--color-border-avatar);
 }
 
 // переменные sass
@@ -85,6 +94,11 @@ header {
 		text-decoration: none;
 		color: var(--color-font-panel);
 		font-size: var(--font-size-panel);
+		transition: transform 0.5s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 
@@ -109,7 +123,51 @@ main {
 	}
 }
 
+.main_block {
+	color: var(--color-font-main);
+	position: relative;
+	z-index: 1;
+}
+
+.greetings {
+	font-size: var(--font-size-greetings);
+}
+
+.name {
+	font-size: var(--font-size-name);
+}
+
+.description {
+	font-size: var(--font-size-description);
+}
+
+#avatar {
+	position: relative;
+	z-index: 1;
+	// margin-left: var(--margin-avatar);
+	width: 200px;
+	img {
+		border-radius: 50%;
+		border: var(--border-avatar);
+	}
+}
+
 // низ страницы
 .links_social {
 	display: flex;
+}
+
+footer {
+	height: 5vh;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	// left: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: var(--color-header);
+	color: var(--color-font-panel);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
