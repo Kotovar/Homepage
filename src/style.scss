@@ -1,3 +1,5 @@
+@import 'about';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -109,10 +111,9 @@ header {
 //основная страница
 
 main {
-	position: relative;
 	background-color: var(--color-main);
-	min-height: 70vh;
-	z-index: 1;
+	height: auto;
+	margin-bottom: 10vh;
 
 	&::before {
 		content: '';
@@ -149,7 +150,6 @@ main {
 #avatar {
 	position: relative;
 	z-index: 1;
-	// margin-left: var(--margin-avatar);
 	width: 200px;
 	img {
 		border-radius: 50%;

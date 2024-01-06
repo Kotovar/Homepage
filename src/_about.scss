@@ -1,0 +1,59 @@
+:root {
+	// цвета
+	--color-hr: black;
+	--color-links: #161a45;
+
+	// размеры
+	--font-size-p: 1.1vw;
+	--font-size-h1: calc(var(--font-size-p) * 2);
+	--width-about: 50vw;
+	--height-hr: 2px;
+}
+
+// раздел main
+
+#about {
+	position: relative;
+	z-index: 1;
+	width: var(--width-about);
+	margin: 0 auto;
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	align-items: center;
+
+	h1 {
+		font-size: var(--font-size-h1);
+	}
+
+	p {
+		font-size: var(--font-size-p);
+
+		a {
+			color: var(--color-links);
+		}
+	}
+}
+
+#skills {
+	display: grid;
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+
+	img {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+hr {
+	border: none;
+	background-color: var(--color-hr);
+	width: var(--width-about);
+	height: var(--height-hr);
+}
