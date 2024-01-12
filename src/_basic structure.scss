@@ -1,3 +1,21 @@
+// HTML
+html::-webkit-scrollbar {
+	width: var(--scrollbar-width);
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: var(--color-header);
+}
+
+html::-webkit-scrollbar-track {
+	background: rgb(176, 177, 238);
+	background: linear-gradient(
+		180deg,
+		var(--color-main) 90%,
+		var(--color-header) 90%
+	);
+}
+
 // HEADER
 header {
 	position: relative;
@@ -18,7 +36,7 @@ header {
 
 	.#{&}__panel {
 		height: calc(var(--height-right-panel) * 0.9);
-		padding: var(--padding-panel);
+		padding-inline: var(--padding-panel);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -28,27 +46,33 @@ header {
 	a {
 		text-shadow: var(--shadow-main);
 		text-decoration: none;
-		color: var(--color-font-panel); //поменять
-		font-size: var(--font-size-panel); //поменять
+		color: var(--color-font-panel);
+		font-size: var(--font-size-panel);
 		transition: transform var(--transition);
-
-		&:hover {
-			transform: scale(1.1);
-		}
 	}
 }
 
+.header__panel a:not(.current):hover {
+	transform: scale(1.1);
+}
+
 //MAIN
-main::before {
-	content: '';
-	position: absolute;
+main {
 	background-color: var(--color-main);
-	inset: 0;
+	padding-bottom: var(--footer-height);
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		height: 100%;
+		background-color: inherit;
+	}
 }
 
 // FOOTER
 footer {
-	height: 10vh;
+	height: var(--footer-height);
 	width: 100%;
 	display: flex;
 	position: fixed;
@@ -59,6 +83,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	box-shadow: var(--shadow-footer);
+	z-index: 1;
 }
 
 .links_soc1al {

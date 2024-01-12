@@ -1,11 +1,11 @@
 :root {
 	// цвета
-	--color-header: rgb(51, 52, 116);
-	--color-main: rgb(176, 177, 238);
-	--color-font-panel: white;
-	--color-font-main: black;
-	--color-current-page: rgb(153, 204, 255);
-	--color-border-avatar: rgba(255, 255, 255, 0.575);
+	--color-header: #333474;
+	--color-main: #e7bb2b;
+	--color-font-panel: #ffffff;
+	--color-font-main: #000000;
+	--color-current-page: #f1bd13;
+	--color-border-avatar: #ffffff93;
 
 	// размеры
 	--height-right-panel: 35vh;
@@ -13,16 +13,18 @@
 	--font-size-greetings: 2vw;
 	--font-size-name: calc(var(--font-size-greetings) * 2.5);
 	--font-size-description: calc(var(--font-size-greetings) * 0.7);
+	--footer-height: 10vh;
+	--scrollbar-width: 10px;
 
 	// отступы
-	--padding-panel: 0 calc(1vw + 10px);
+	--padding-panel: calc(1vw + 10px);
 
 	// тени
-	--shadow-main: 5px 5px 10px rgba(0, 0, 0, 0.7);
-	--shadow-footer: 5px 5px 20px rgba(0, 0, 0, 0.7);
+	--shadow-main: 5px 5px 10px rgb(0 0 0 / 0.7);
+	--shadow-footer: 5px 5px 20px rgb(0 0 0 / 0.7);
 
 	// рамки
-	--border-avatar: 7px solid var(--color-border-avatar);
+	--border-avatar: 10px solid var(--color-border-avatar);
 
 	// трансформации
 	--transition: 0.2s;
