@@ -1,0 +1,32 @@
+:root {
+	// цвета
+	--color-header: rgb(51, 52, 116);
+	--color-main: rgb(176, 177, 238);
+	--color-font-panel: white;
+	--color-font-main: black;
+	--color-current-page: rgb(153, 204, 255);
+	--color-border-avatar: rgba(255, 255, 255, 0.575);
+
+	// размеры
+	--height-right-panel: 35vh;
+	--font-size-panel: calc(var(--height-right-panel) / 8);
+	--font-size-greetings: 2vw;
+	--font-size-name: calc(var(--font-size-greetings) * 2.5);
+	--font-size-description: calc(var(--font-size-greetings) * 0.7);
+
+	// отступы
+	--padding-panel: 0 calc(1vw + 10px);
+
+	// тени
+	--shadow-main: 5px 5px 10px rgba(0, 0, 0, 0.7);
+	--shadow-footer: 5px 5px 20px rgba(0, 0, 0, 0.7);
+
+	// рамки
+	--border-avatar: 7px solid var(--color-border-avatar);
+
+	// трансформации
+	--transition: 0.2s;
+}
+
+// угол поворота диагонального окна
+$angle-diagonal: 35deg;

@@ -1,0 +1,17 @@
+$angle-diagonal: 35deg;
+
+@mixin diagonal-container($angle, $direction) {
+	$points: ();
+	$percent-width: tan($angle) * 100;
+	$percent-height: tan($angle) * 100;
+	@if $direction == top-left {
+		$points: (0 0, 100% 0, 100% $percent-width, 0% 100%);
+	} @else if $direction == top-right {
+		$points: (0 0, 100% 0, 100% 100%, 0% (100% - $percent-width));
+	} @else if $direction == bottom-left {
+		$points: (0 0, 100% ($percent-height - 100%), 100% 100%, 0% 100%);
+	} @else if $direction == bottom-right {
+		$points: (0 ($percent-height - 100%), 100% 0, 100% 100%, 0% 100%);
+	}
+	clip-path: polygon($points);
+}
