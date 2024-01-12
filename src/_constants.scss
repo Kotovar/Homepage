@@ -3,16 +3,16 @@
 	--color-header: #333474;
 	--color-main: #e7bb2b;
 	--color-font-panel: #ffffff;
-	--color-font-main: #000000;
-	--color-current-page: #f1bd13;
+	--color-font-main: #212121;
+	--color-current-page: #f4c93e;
 	--color-border-avatar: #ffffff93;
 
 	// размеры
 	--height-right-panel: 35vh;
 	--font-size-panel: calc(var(--height-right-panel) / 8);
-	--font-size-greetings: 2vw;
-	--font-size-name: calc(var(--font-size-greetings) * 2.5);
-	--font-size-description: calc(var(--font-size-greetings) * 0.7);
+	--font-size-greetings: 40px; //настроить формулу для расчёта
+	--font-size-name: calc(var(--font-size-greetings) * 2.4);
+	--font-size-description: calc(var(--font-size-greetings) * 0.6);
 	--footer-height: 10vh;
 	--scrollbar-width: 10px;
 
