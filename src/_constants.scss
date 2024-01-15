@@ -1,3 +1,20 @@
+// шрифты
+@font-face {
+	font-family: 'Recursive_Monospace';
+	src: url(/fonts/Recursive_Monospace-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Wellfleet-Regular';
+	src: url(/fonts/Wellfleet-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	// цвета
 	--color-header: #333474;
@@ -28,6 +45,11 @@
 
 	// трансформации
 	--transition: 0.2s;
+	--scale: scale(1.1);
+
+	// шрифты
+	--main-font: Wellfleet-Regular, sans-serif;
+	--second-font: 'Recursive_Monospace', monospace;
 }
 
 // угол поворота диагонального окна

@@ -1,4 +1,4 @@
-// HTML
+// HTML - стилизация scrollbar
 html::-webkit-scrollbar {
 	width: var(--scrollbar-width);
 }
@@ -8,12 +8,17 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-	background: rgb(176, 177, 238);
+	background: var(--color-main);
 	background: linear-gradient(
 		180deg,
 		var(--color-main) 90%,
 		var(--color-header) 90%
 	);
+}
+
+body {
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 // HEADER
@@ -48,18 +53,20 @@ header {
 		text-decoration: none;
 		color: var(--color-font-panel);
 		font-size: var(--font-size-panel);
+		font-family: var(--main-font);
 		transition: transform var(--transition);
 	}
 }
 
 .header__panel a:not(.current):hover {
-	transform: scale(1.1);
+	transform: var(--scale);
 }
 
 //MAIN
 main {
 	background-color: var(--color-main);
 	padding-bottom: var(--footer-height);
+	color: var(--color-font-main);
 
 	&::before {
 		content: '';
@@ -97,6 +104,12 @@ footer {
 
 .footer-soc1al-item {
 	list-style-type: none;
+	position: relative;
+	display: block;
+
+	&:hover {
+		animation: jump 0.8s cubic-bezier(0.4, 0, 1, 1) infinite;
+	}
 }
 
 .footer-soc1al-link {
