@@ -19,15 +19,17 @@ html::-webkit-scrollbar-track {
 body {
 	-webkit-user-select: none;
 	user-select: none;
+	height: 100dvh;
 }
 
 // HEADER
 header {
 	position: relative;
 	display: flex;
+
 	height: var(--height-right-panel);
 	z-index: 100;
-	justify-content: space-between;
+	justify-content: flex-end;
 	filter: drop-shadow(var(--shadow-main));
 
 	&:before {
@@ -79,6 +81,7 @@ main {
 
 // FOOTER
 footer {
+	font-family: var(--main-font);
 	height: var(--footer-height);
 	width: 100%;
 	display: flex;
@@ -91,6 +94,7 @@ footer {
 	justify-content: center;
 	box-shadow: var(--shadow-footer);
 	z-index: 1;
+	row-gap: 0.5em;
 }
 
 .links_soc1al {
@@ -106,14 +110,10 @@ footer {
 	list-style-type: none;
 	position: relative;
 	display: block;
-
-	&:hover {
-		animation: jump 0.8s cubic-bezier(0.4, 0, 1, 1) infinite;
-	}
 }
 
 .footer-soc1al-link {
 	display: flex;
-	width: 50px;
+	width: 2em;
 	color: var(--color-font-panel);
 }

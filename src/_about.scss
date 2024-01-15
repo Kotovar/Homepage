@@ -1,17 +1,3 @@
-:root {
-	// цвета
-	--color-hr: black;
-	--color-links: #161a45;
-
-	// размеры
-	--font-size-p: 1.1vw;
-	--font-size-h1: calc(var(--font-size-p) * 2);
-	--width-about: 50vw;
-	--height-hr: 2px;
-}
-
-// раздел main
-
 #about {
 	position: relative;
 	z-index: 1;
