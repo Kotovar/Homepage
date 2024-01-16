@@ -1,9 +1,10 @@
 @import 'mixins';
-@import '_constants';
-@import '_reset';
-@import '_basic structure';
-@import '_animations';
+@import 'constants';
+@import 'reset';
+@import 'basic structure';
+@import 'animations';
 @import 'main';
 @import 'about';
-@import '_classes';
-@import '_media';
+@import 'project';
+@import 'classes';
+@import 'media';
