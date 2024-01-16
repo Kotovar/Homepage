@@ -2,3 +2,9 @@
 	color: var(--color-current-page);
 	border-bottom: 2px solid var(--color-current-page);
 }
+
+.main_block_width {
+	max-width: var(--common-width);
+	width: 100%;
+	margin: 0 auto;
+}

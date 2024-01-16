@@ -1,8 +1,5 @@
-#about {
+.about {
 	position: relative;
-	z-index: 1;
-	width: var(--width-about);
-	margin: 0 auto;
 	display: flex;
 	gap: 1rem;
 	flex-direction: column;
@@ -10,11 +7,11 @@
 	font-family: var(--main-font);
 
 	h1 {
-		font-size: var(--font-size-h1);
+		font-size: var(--font-size-greetings);
 	}
 
 	p {
-		font-size: var(--font-size-p);
+		font-size: var(--font-size-description);
 
 		a {
 			color: var(--color-links);
@@ -22,11 +19,11 @@
 	}
 }
 
-#skills {
+.skills {
 	display: grid;
 }
 
-.skill {
+.hard-skill {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,6 +38,6 @@
 hr {
 	border: none;
 	background-color: var(--color-hr);
-	width: var(--width-about);
+	width: var(--common-width);
 	height: var(--height-hr);
 }

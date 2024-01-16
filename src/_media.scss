@@ -29,6 +29,13 @@
 	}
 }
 
+@media (max-height: 800px) and (orientation: landscape) {
+	footer {
+		column-gap: 1em;
+		flex-direction: row;
+	}
+}
+
 // запуск анимации только при наведении мышкой
 @media (hover: hover) {
 	.footer-soc1al-item:hover {

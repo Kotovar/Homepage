@@ -18,7 +18,7 @@
 :root {
 	// цвета
 
-	--color-links: #161a45; //поменять
+	--color-links: #379595; //поменять
 	--color-header: #333474;
 	--color-main: #e7bb2b;
 	--color-font-panel: #ffffff;
@@ -35,12 +35,8 @@
 	--font-size-description: calc(var(--font-size-greetings) * 0.6);
 	--footer-height: 10vh;
 	--scrollbar-width: 10px;
-
-	// размеры из about  - поменять
-	--font-size-p: 1.1vw; // поменять
-	--font-size-h1: calc(var(--font-size-p) * 2);
-	--width-about: 50vw;
 	--height-hr: 2px;
+	--common-width: 50vw;
 
 	// отступы
 	--padding-panel: calc(1vw + 10px);
