@@ -2,6 +2,10 @@
 	.home_information {
 		max-width: 70vw;
 	}
+
+	.main_block_width {
+		max-width: calc(var(--common-width) + 20vw);
+	}
 }
 
 @media (max-width: 800px) {
@@ -26,6 +30,10 @@
 				font-size: 8vw;
 			}
 		}
+	}
+
+	.hard-skills {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
