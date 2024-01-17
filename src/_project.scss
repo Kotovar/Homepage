@@ -3,15 +3,19 @@
 }
 
 .project_image_container {
-	@include project-images(4);
-	visibility: hidden;
-}
+	@include project-images($project-images);
 
-.project_image_1:hover {
-	background: none;
-}
+	div {
+		&:hover {
+			background: none;
+		}
 
-.project_image_1:hover img {
-	visibility: visible;
-	border: 0;
+		&:hover img {
+			visibility: visible;
+		}
+
+		img {
+			visibility: hidden;
+		}
+	}
 }

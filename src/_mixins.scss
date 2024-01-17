@@ -20,7 +20,7 @@ $angle-diagonal: 35deg;
 	@for $i from 1 through $num {
 		.project_image_#{$i} {
 			background: url('/img/project_images/#{$i}-static.png') no-repeat;
-			display: block;
+			display: inline-block;
 		}
 	}
 }
