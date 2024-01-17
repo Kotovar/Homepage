@@ -15,3 +15,12 @@ $angle-diagonal: 35deg;
 	}
 	clip-path: polygon($points);
 }
+
+@mixin project-images($num) {
+	@for $i from 1 through $num {
+		.project_image_#{$i} {
+			background: url('/img/project_images/#{$i}-static.png') no-repeat;
+			display: block;
+		}
+	}
+}
