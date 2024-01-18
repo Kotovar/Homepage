@@ -21,14 +21,13 @@
 	--border-width: 0.07em;
 	--animation-delay: calc(var(--animation-duration) + 0.2s);
 
-	p {
+	div p {
 		margin: 0;
 		font-family: var(--second-font);
 		box-sizing: content-box;
 	}
 
 	& > p {
-		font-family: var(--main-font);
 		font-size: var(--font-size-description);
 		color: transparent;
 		animation: text_appearance calc(var(--animation-duration) / 1.5) linear 5.2s
@@ -36,16 +35,14 @@
 	}
 }
 
-.container_animation_first {
-	p {
-		font-size: var(--font-size-greetings);
-		border-right: var(--border-width) solid var(--color-font-main);
+.container_animation_first p {
+	font-size: var(--font-size-greetings);
+	border-right: var(--border-width) solid var(--color-font-main);
 
-		animation:
-			cursor 0.75s step-end,
-			printed_text var(--animation-duration) steps(var(--animation-steps)),
-			cursor_off 0.2s linear var(--animation-delay) forwards;
-	}
+	animation:
+		cursor 0.75s step-end,
+		printed_text var(--animation-duration) steps(var(--animation-steps)),
+		cursor_off 0.2s linear var(--animation-delay) forwards;
 }
 
 .container_animation_first,

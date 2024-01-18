@@ -1,21 +1,33 @@
 .project_field {
+	--common-width: 70vw;
+
 	position: relative;
 }
 
 .project_image_container {
-	@include project-images($project-images);
-
-	div {
+	& > div:last-child {
 		&:hover {
 			background: none;
-		}
 
-		&:hover img {
-			visibility: visible;
+			img {
+				visibility: visible;
+			}
 		}
 
 		img {
-			visibility: hidden;
+			position: relative;
+			transform: scale(0.71, 0.82) translateY(-3%);
 		}
 	}
+}
+
+.frame {
+	position: absolute;
+}
+
+.project {
+	display: grid;
+	grid-template-columns: 6fr 5fr;
+	column-gap: 1em;
+	margin-bottom: 4em;
 }
