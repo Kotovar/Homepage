@@ -1,7 +1,16 @@
+// настройки карточек проектов - текст, изображения
+
 .project_field {
 	--common-width: 70vw;
 
 	position: relative;
+}
+
+.project {
+	display: grid;
+	grid-template-columns: 6fr 5fr;
+	column-gap: 1em;
+	margin-bottom: var(--margin-bottom-projects);
 }
 
 .project_image_container {
@@ -21,13 +30,75 @@
 	}
 }
 
+.project_description h2 + p {
+	font-size: var(--font-size-description);
+
+	& + p {
+		font-size: var(--font-size-third);
+	}
+}
+
 .frame {
 	position: absolute;
 }
 
-.project {
-	display: grid;
-	grid-template-columns: 6fr 5fr;
-	column-gap: 1em;
-	margin-bottom: 4em;
+//  span
+.project_features {
+	color: var(--color-font-features);
+
+	& + a {
+		color: var(--color-links);
+	}
+}
+
+.name_project {
+	font-family: var(--second-font);
+}
+
+.project_features,
+.name_project {
+	font-weight: bold;
+}
+
+// Кнопки и поля с ними
+.buttons_section {
+	display: flex;
+	column-gap: 2em;
+
+	button {
+		width: 5em;
+	}
+}
+
+.button {
+	border-radius: 20px;
+	border: 3px solid var(--color-font-main);
+	background-color: var(--color-header);
+	color: var(--color-font-panel);
+	font-size: var(--font-size-description);
+	outline: none;
+	transition: all var(--transition);
+
+	&:hover {
+		background-color: #00000000;
+		color: var(--color-font-main);
+		// transform: var(--scale);
+		transform: translateY(-3px);
+		box-shadow: var(--shadow-button-big);
+	}
+
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: var(--shadow-button-small);
+	}
+}
+
+.all_projects_field {
+	margin-bottom: calc(var(--margin-bottom-projects) / 2);
+	display: flex;
+	justify-content: center;
+}
+
+.all_projects_button {
+	padding-inline: 1em;
 }

@@ -18,11 +18,12 @@
 :root {
 	// цвета
 
-	--color-links: #379595; //поменять
+	--color-links: #3eb489; //поменять
 	--color-header: #333474;
 	--color-main: #e7bb2b;
 	--color-font-panel: #ffffff;
 	--color-font-main: #212121;
+	--color-font-features: #f72b2b;
 	--color-hr: var(--color-font-main);
 	--color-current-page: #f4c93e;
 	--color-border-avatar: #ffffff93;
@@ -31,18 +32,24 @@
 	--height-right-panel: 35vh;
 	--font-size-panel: calc(var(--height-right-panel) / 8);
 	--font-size-greetings: clamp(24px, 5vw, 40px);
-	--font-size-name: calc(var(--font-size-greetings) * 2.4);
+	--font-size-second: calc(var(--font-size-greetings) * 0.8);
+	--font-size-third: calc(var(--font-size-greetings) * 0.5);
 	--font-size-description: calc(var(--font-size-greetings) * 0.6);
+	--font-size-name: calc(var(--font-size-greetings) * 2.4);
+
 	--footer-height: 10vh;
 	--scrollbar-width: 10px;
 	--height-hr: 2px;
 	--common-width: 50vw;
+	--margin-bottom-projects: 4em;
 
 	// отступы
 	--padding-panel: calc(1vw + 10px);
 
 	// тени
 	--shadow-main: 5px 5px 10px rgb(0 0 0 / 0.7);
+	--shadow-button-big: 0px 10px 10px rgb(0 0 0 / 0.7);
+	--shadow-button-small: 0px 5px 10px rgb(0 0 0 / 0.4);
 	--shadow-footer: 5px 5px 20px rgb(0 0 0 / 0.7);
 
 	// рамки
