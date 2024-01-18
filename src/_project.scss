@@ -4,12 +4,18 @@
 	--common-width: 70vw;
 
 	position: relative;
+
+	h1,
+	.all_projects_field {
+		margin-bottom: calc(var(--margin-bottom-projects) / 2);
+	}
 }
 
 .project {
 	display: grid;
 	grid-template-columns: 6fr 5fr;
 	column-gap: 1em;
+	justify-items: center;
 	margin-bottom: var(--margin-bottom-projects);
 }
 
@@ -94,7 +100,6 @@
 }
 
 .all_projects_field {
-	margin-bottom: calc(var(--margin-bottom-projects) / 2);
 	display: flex;
 	justify-content: center;
 }
