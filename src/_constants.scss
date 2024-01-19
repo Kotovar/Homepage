@@ -26,7 +26,7 @@
 	--color-font-features: #f72b2b;
 	--color-hr: var(--color-font-main);
 	--color-current-page: #f4c93e;
-	--color-border-avatar: #ffffff93;
+	--color-border-avatar: var(--color-header);
 
 	// размеры
 	--height-right-panel: 35vh;
@@ -69,3 +69,6 @@ $angle-diagonal: 35deg;
 
 //количество проектов на последней странице
 $project-images: 4;
+
+//количество карточек проектов
+$project-count: 4;
