@@ -16,13 +16,13 @@ $angle-diagonal: 35deg;
 	clip-path: polygon($points);
 }
 
-@mixin ProjectHover($sum) {
-	@for $i from 1 through $sum {
-		.project_image_#{$i} img:hover {
-			content: url('/img/project_images/#{$i}-animated.gif');
-		}
-	}
-}
+// @mixin ProjectHover($sum) {
+// 	@for $i from 1 through $sum {
+// 		.project_image_#{$i} img:hover {
+// 			content: url('/img/project_images/#{$i}-animated.gif');
+// 		}
+// 	}
+// }
 
 @mixin ProjectTouch($sum) {
 	@for $i from 1 through $sum {

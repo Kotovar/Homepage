@@ -16,3 +16,36 @@ if (!hasScrollbar) {
 	panel.style.marginRight = rightIndent;
 	footer.style.paddingRight = rightIndent;
 }
+
+// функция для замены статичного изображения на анимированное при наведении курсора
+function hover(sumProjects) {
+	const projectMain = document.getElementsByClassName('project_field');
+	const projectImage = [
+		...document.getElementsByClassName('project_image_img'),
+	];
+
+	const staticImage = [];
+	const animatedImage = [];
+	for (let i = 1; i <= sumProjects; i++) {
+		staticImage.push(`../img/project_images/${i}-static.png`);
+		animatedImage.push(`../img/project_images/${i}-animated.gif`);
+	}
+
+	projectMain[0].addEventListener('mouseover', (e) => {
+		if (projectImage.includes(e.target)) {
+			let index = e.target.alt;
+			index = index[index.length - 1] - 1;
+			e.target.setAttribute('src', animatedImage[index]);
+		}
+	});
+
+	projectMain[0].addEventListener('mouseout', (e) => {
+		if (projectImage.includes(e.target)) {
+			let index = e.target.alt;
+			index = index[index.length - 1] - 1;
+			e.target.setAttribute('src', staticImage[index]);
+		}
+	});
+}
+
+hover(4);

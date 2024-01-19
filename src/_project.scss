@@ -1,4 +1,4 @@
-@include ProjectHover($project-count);
+// @include ProjectHover($project-count);
 // настройки карточек проектов - текст, изображения
 
 .project_field {
@@ -22,9 +22,6 @@
 
 .project_image_container {
 	& > div:last-child {
-		// display: flex;
-		// box-sizing: content-box !important;
-
 		&:hover {
 			background: none;
 
