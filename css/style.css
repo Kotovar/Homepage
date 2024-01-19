@@ -647,18 +647,4 @@ hr {
   .hard-skills {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (hover: none) {
-  .project_image_1 img {
-    content: url("/img/project_images/1-static-mobile.webp");
-  }
-  .project_image_2 img {
-    content: url("/img/project_images/2-static-mobile.webp");
-  }
-  .project_image_3 img {
-    content: url("/img/project_images/3-static-mobile.webp");
-  }
-  .project_image_4 img {
-    content: url("/img/project_images/4-static-mobile.webp");
-  }
 }/*# sourceMappingURL=style.css.map */
