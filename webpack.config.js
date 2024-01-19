@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -20,12 +21,17 @@ module.exports = {
 			template: './src/projects.html',
 			chunks: ['main'],
 		}),
+		new CopyPlugin({
+			patterns: [
+				{from: 'img', to: 'img'}, // копирует папку img в папку dist
+			],
+		}),
 	],
 	devtool: 'inline-source-map',
 	output: {
 		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/',
+		publicPath: '',
 		clean: {
 			keep: /css\//,
 		},

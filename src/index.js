@@ -27,8 +27,8 @@ function hover(sumProjects) {
 	const staticImage = [];
 	const animatedImage = [];
 	for (let i = 1; i <= sumProjects; i++) {
-		staticImage.push(`/img/project_images/${i}-static.png`);
-		animatedImage.push(`/img/project_images/${i}-animated.gif`);
+		staticImage.push(`./img/project_images/${i}-static.png`);
+		animatedImage.push(`./img/project_images/${i}-animated.gif`);
 	}
 
 	projectMain[0].addEventListener('mouseover', (e) => {
@@ -52,7 +52,9 @@ function chooseMode(array, target, field) {
 	}
 }
 
-hover(4);
+if (document.getElementsByClassName('project_field').length > 0) {
+	hover(4);
+}
 
 // projectMain[0].addEventListener('touchstart', (e) => {
 //     if (projectImage.includes(e.target)) {
