@@ -53,3 +53,20 @@ function chooseMode(array, target, field) {
 }
 
 hover(4);
+
+// projectMain[0].addEventListener('touchstart', (e) => {
+//     if (projectImage.includes(e.target)) {
+//       // Проверяем, было ли уже нажато на изображение
+//       if (e.target.classList.contains('active')) {
+//         // Если да, то возвращаем статичное изображение
+//         chooseMode(staticImage, e.target, projectImage);
+//         // Удаляем класс active
+//         e.target.classList.remove('active');
+//       } else {
+//         // Если нет, то меняем на анимированное изображение
+//         chooseMode(animatedImage, e.target, projectImage);
+//         // Добавляем класс active
+//         e.target.classList.add('active');
+//       }
+//     }
+//   });
