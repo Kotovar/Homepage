@@ -467,22 +467,6 @@ hr {
   left: var(--space_pseudo_inline);
 }
 
-.project_image_1 img:hover {
-  content: url("/img/project_images/1-animated.gif");
-}
-
-.project_image_2 img:hover {
-  content: url("/img/project_images/2-animated.gif");
-}
-
-.project_image_3 img:hover {
-  content: url("/img/project_images/3-animated.gif");
-}
-
-.project_image_4 img:hover {
-  content: url("/img/project_images/4-animated.gif");
-}
-
 .project_field {
   --common-width: 70vw;
   position: relative;
