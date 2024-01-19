@@ -22,6 +22,9 @@
 
 .project_image_container {
 	& > div:last-child {
+		// display: flex;
+		// box-sizing: content-box !important;
+
 		&:hover {
 			background: none;
 
@@ -47,6 +50,7 @@
 
 .frame {
 	position: absolute;
+	max-width: var(--width-project-image);
 }
 
 //  span
