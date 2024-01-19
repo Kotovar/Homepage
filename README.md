@@ -2,6 +2,9 @@
 
 This is my personal page, which is a portfolio with current data
 
+![1jpg](https://github.com/Kotovar/Homepage/assets/77914431/9ac9081a-e931-4335-8d39-46fc73ef8ed3)
+
+
 ## How to use
 
 To use Homepage, you need to have Node.js and npm installed on your system. You can then clone this repository and run the following commands:
