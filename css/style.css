@@ -648,11 +648,6 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (hover: hover) {
-  .footer-soc1al-item:hover {
-    animation: jump 0.8s cubic-bezier(0.4, 0, 1, 1) infinite;
-  }
-}
 @media (hover: none) {
   .project_image_1 img {
     content: url("/img/project_images/1-static-mobile.webp");
