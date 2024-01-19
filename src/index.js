@@ -27,25 +27,29 @@ function hover(sumProjects) {
 	const staticImage = [];
 	const animatedImage = [];
 	for (let i = 1; i <= sumProjects; i++) {
-		staticImage.push(`../img/project_images/${i}-static.png`);
-		animatedImage.push(`../img/project_images/${i}-animated.gif`);
+		staticImage.push(`/img/project_images/${i}-static.png`);
+		animatedImage.push(`/img/project_images/${i}-animated.gif`);
 	}
 
 	projectMain[0].addEventListener('mouseover', (e) => {
 		if (projectImage.includes(e.target)) {
-			let index = e.target.alt;
-			index = index[index.length - 1] - 1;
-			e.target.setAttribute('src', animatedImage[index]);
+			chooseMode(animatedImage, e.target, projectImage);
 		}
 	});
 
 	projectMain[0].addEventListener('mouseout', (e) => {
 		if (projectImage.includes(e.target)) {
-			let index = e.target.alt;
-			index = index[index.length - 1] - 1;
-			e.target.setAttribute('src', staticImage[index]);
+			chooseMode(staticImage, e.target, projectImage);
 		}
 	});
+}
+
+function chooseMode(array, target, field) {
+	if (field.includes(target)) {
+		let index = target.alt;
+		index = index[index.length - 1] - 1;
+		target.setAttribute('src', array[index]);
+	}
 }
 
 hover(4);
