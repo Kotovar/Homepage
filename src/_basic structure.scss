@@ -111,10 +111,6 @@ footer {
 	list-style-type: none;
 	position: relative;
 	display: block;
-
-	&:hover {
-		animation: jump 0.8s cubic-bezier(0.4, 0, 1, 1) infinite;
-	}
 }
 
 .footer-soc1al-link {

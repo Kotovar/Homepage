@@ -77,3 +77,10 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
+// запуск анимации только при наведении мышкой
+@media (hover: hover) {
+	.footer-soc1al-item:hover {
+		animation: jump 0.8s cubic-bezier(0.4, 0, 1, 1) infinite;
+	}
+}
