@@ -22,16 +22,14 @@ module.exports = {
 			chunks: ['main'],
 		}),
 		new CopyPlugin({
-			patterns: [
-				{from: 'img', to: 'img'}, // копирует папку img в папку dist
-			],
+			patterns: [{from: 'img', to: 'img'}],
 		}),
 	],
 	devtool: 'inline-source-map',
 	output: {
 		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/',
+		publicPath: '',
 		clean: {
 			keep: /css\//,
 		},
