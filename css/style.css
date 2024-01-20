@@ -30,6 +30,7 @@
   --font-size-third: calc(var(--font-size-greetings) * 0.5);
   --font-size-description: calc(var(--font-size-greetings) * 0.6);
   --font-size-name: calc(var(--font-size-greetings) * 2.4);
+  --font-size-footer: max(1vw, 2vh);
   --footer-height: 10vh;
   --scrollbar-width: 10px;
   --height-hr: 2px;
@@ -267,6 +268,11 @@ footer {
        column-gap: 1rem;
   margin: 0;
   padding-left: 0;
+}
+
+.links_soc1al ul,
+#year {
+  font-size: var(--font-size-footer);
 }
 
 .footer-soc1al-item {
@@ -642,19 +648,17 @@ hr {
   header .header__panel {
     flex-direction: row;
     align-items: flex-start;
-    gap: 1em;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
   }
   header .header__panel a {
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .project_field {
     --common-width: 70vw;
   }
   .hard-skills {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .header__panel {
-    margin-top: 0.5em;
   }
 }
 @media (hover: hover) {
