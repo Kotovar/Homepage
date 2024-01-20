@@ -428,6 +428,7 @@ hr {
   -o-object-fit: contain;
      object-fit: contain;
   transition: transform var(--transition);
+  filter: drop-shadow(var(--shadow-main));
 }
 .hard-skill img:hover {
   transform: var(--scale);
@@ -646,6 +647,9 @@ hr {
   }
   .hard-skills {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .header__panel {
+    margin-top: 1em;
   }
 }
 @media (hover: hover) {
