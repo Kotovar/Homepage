@@ -274,9 +274,6 @@ footer {
   position: relative;
   display: block;
 }
-.footer-soc1al-item:hover {
-  animation: jump 0.8s cubic-bezier(0.4, 0, 1, 1) infinite;
-}
 
 .footer-soc1al-link {
   display: flex;
@@ -649,5 +646,10 @@ hr {
   }
   .hard-skills {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (hover: hover) {
+  .footer-soc1al-item:hover {
+    animation: jump 0.8s cubic-bezier(0.4, 0, 1, 1) infinite;
   }
 }/*# sourceMappingURL=style.css.map */
