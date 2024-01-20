@@ -59,18 +59,16 @@
 @media (max-width: 576px) {
 	header {
 		--height-right-panel: 20vh;
-		// --font-size-panel: 2em;
-
 		justify-content: center;
 
 		.#{&}__panel {
 			flex-direction: row;
 
 			align-items: flex-start;
-			gap: 1em;
+			column-gap: 2em;
 
 			a {
-				font-size: 8vw;
+				font-size: 7vw;
 			}
 		}
 	}
@@ -81,10 +79,6 @@
 
 	.hard-skills {
 		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.header__panel {
-		margin-top: 0.5em;
 	}
 }
 
