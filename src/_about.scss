@@ -40,6 +40,7 @@ hr {
 		width: 100%;
 		object-fit: contain;
 		transition: transform var(--transition);
+		filter: drop-shadow(var(--shadow-main));
 	}
 
 	img:hover {

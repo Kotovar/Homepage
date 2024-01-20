@@ -76,6 +76,10 @@
 	.hard-skills {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.header__panel {
+		margin-top: 1em;
+	}
 }
 
 // запуск анимации только при наведении мышкой
