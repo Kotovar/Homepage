@@ -2,7 +2,8 @@
 
 This is my personal page, which is a portfolio with current data
 
-![1jpg](https://github.com/Kotovar/Homepage/assets/77914431/9ac9081a-e931-4335-8d39-46fc73ef8ed3)
+![1](https://github.com/Kotovar/Homepage/assets/77914431/6172546d-0794-4366-89a6-29bee48aff60)
+
 
 ## How to use
 
