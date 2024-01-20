@@ -14,8 +14,8 @@
   font-display: swap;
 }
 :root {
-  --color-links: #7e7676;
-  --color-header: #938888;
+  --color-header: #7d7777;
+  --color-links: var(--color-header);
   --color-main: #e7bb2b;
   --color-font-panel: #ffffff;
   --color-font-main: #212121;
@@ -595,6 +595,10 @@ hr {
   }
 }
 @media (max-width: 800px) {
+  header {
+    --height-right-panel: 25vh;
+    --font-size-panel: 2em;
+  }
   header .header__panel {
     height: calc(var(--height-right-panel) * 0.7);
   }
@@ -632,6 +636,7 @@ hr {
 }
 @media (max-width: 576px) {
   header {
+    --height-right-panel: 20vh;
     justify-content: center;
   }
   header .header__panel {
@@ -649,7 +654,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
   .header__panel {
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
 }
 @media (hover: hover) {
