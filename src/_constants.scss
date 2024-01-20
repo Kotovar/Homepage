@@ -18,9 +18,9 @@
 :root {
 	// цвета
 
-	--color-links: #7e7676;
-	--color-header: #938888; //#333474
-	--color-main: #e7bb2b; //#e7bb2b
+	--color-header: #7d7777;
+	--color-links: var(--color-header);
+	--color-main: #e7bb2b;
 	--color-font-panel: #ffffff;
 	--color-font-main: #212121;
 	--color-font-features: #f72b2b;
