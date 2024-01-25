@@ -4,7 +4,7 @@ This is my personal page, which is a portfolio with current data
 
 ![1](https://github.com/Kotovar/Homepage/assets/77914431/8a7c5e64-817f-494d-b9ec-479ce29218fa)
 
-
+[Live preview](https://kotovar.github.io/Homepage/)
 ## How to use
 
 To use Homepage, you need to have Node.js and npm installed on your system. You can then clone this repository and run the following commands:
@@ -19,7 +19,6 @@ next need to make in the project directory
 
 open the `dist/index.html` file in your browser
 
-[Live preview](https://kotovar.github.io/Homepage/)
 
 ## How it works
 
