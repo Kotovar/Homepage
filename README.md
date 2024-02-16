@@ -2,7 +2,7 @@
 
 This is my personal page, which is a portfolio with current data
 
-![1](https://github.com/Kotovar/Homepage/assets/77914431/8a7c5e64-817f-494d-b9ec-479ce29218fa)
+![1](https://github.com/Kotovar/Homepage/assets/77914431/3e1845e8-8909-40ed-86f0-792adbd54cf0)
 
 [Live preview](https://kotovar.github.io/Homepage/)
 ## How to use
