@@ -31,7 +31,7 @@
   --font-size-description: calc(var(--font-size-greetings) * 0.6);
   --font-size-name: calc(var(--font-size-greetings) * 2.4);
   --font-size-footer: max(1vw, 2vh);
-  --footer-height: 10vh;
+  --footer-height: 5vh;
   --scrollbar-width: 10px;
   --height-hr: 2px;
   --common-width: 50vw;
@@ -183,7 +183,7 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
   background: var(--color-main);
-  background: linear-gradient(180deg, var(--color-main) 90%, var(--color-header) 90%);
+  background: linear-gradient(180deg, var(--color-main) 95%, var(--color-header) 95%);
 }
 
 body {
@@ -254,12 +254,12 @@ footer {
   bottom: 0;
   background-color: var(--color-header);
   color: var(--color-font-panel);
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-footer);
   z-index: 1;
-  row-gap: 0.5em;
+  -moz-column-gap: 0.5em;
+       column-gap: 0.5em;
 }
 
 .links_soc1al ul {
@@ -542,16 +542,14 @@ hr {
 
 .button {
   border-radius: 20px;
-  border: 3px solid var(--color-font-main);
-  background-color: var(--color-header);
-  color: var(--color-font-panel);
+  border: 4px solid currentColor;
+  background-color: transparent;
+  color: var(--color-font-main);
   font-size: var(--font-size-description);
   outline: none;
   transition: all var(--transition);
 }
 .button:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--color-font-main);
   transform: translateY(-3px);
   box-shadow: var(--shadow-button-big);
 }
@@ -631,13 +629,6 @@ hr {
   }
   .buttons_section form button {
     width: 100%;
-  }
-}
-@media (max-height: 800px) and (orientation: landscape) {
-  footer {
-    -moz-column-gap: 5em;
-         column-gap: 5em;
-    flex-direction: row;
   }
 }
 @media (max-width: 576px) {
