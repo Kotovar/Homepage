@@ -49,13 +49,6 @@
 	}
 }
 
-@media (max-height: 800px) and (orientation: landscape) {
-	footer {
-		column-gap: 5em;
-		flex-direction: row;
-	}
-}
-
 @media (max-width: 576px) {
 	header {
 		--height-right-panel: 20vh;

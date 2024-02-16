@@ -79,16 +79,14 @@
 
 .button {
 	border-radius: 20px;
-	border: 3px solid var(--color-font-main);
-	background-color: var(--color-header);
-	color: var(--color-font-panel);
+	border: 4px solid currentColor;
+	background-color: transparent;
+	color: var(--color-font-main);
 	font-size: var(--font-size-description);
 	outline: none;
 	transition: all var(--transition);
 
 	&:hover {
-		background-color: #00000000;
-		color: var(--color-font-main);
 		transform: translateY(-3px);
 		box-shadow: var(--shadow-button-big);
 	}
