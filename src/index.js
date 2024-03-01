@@ -56,5 +56,5 @@ function chooseMode(array, target, field) {
 }
 
 if (document.getElementsByClassName('project_field').length > 0) {
-	hover(4);
+	hover(5);
 }
