@@ -73,6 +73,10 @@
 	.hard-skills {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	footer {
+		--font-size-footer: 16px;
+	}
 }
 
 // запуск анимации только при наведении мышкой
