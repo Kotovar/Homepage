@@ -2,36 +2,35 @@ import '../dist/css/style.css';
 
 const date = new Date();
 const currentYear = date.getFullYear();
-const year = document.getElementById('year');
-year.textContent = `© ${currentYear} | Designed and coded by Dmitry`;
-
-// проверка на наличие скроллбара
+const year = document.querySelector('#year');
+year.textContent = `© ${currentYear} | Dmitry`;
 const html = document.querySelector('html');
 const footer = document.querySelector('footer');
 const panel = document.querySelector('.header__panel');
 const rightIndent =
 	getComputedStyle(html).getPropertyValue('--scrollbar-width');
 const hasScrollbar = html.clientHeight < html.scrollHeight;
+const numberOfProjects = document.querySelectorAll('.project').length;
+
 if (!hasScrollbar) {
 	panel.style.marginRight = rightIndent;
 	footer.style.paddingRight = rightIndent;
 }
 
-// функция для замены статичного изображения на анимированное при наведении курсора
 function hover(sumProjects) {
-	const projectMain = document.getElementsByClassName('project_field');
-	const projectImage = [
-		...document.getElementsByClassName('project_image_img'),
-	];
+	if (!sumProjects) {
+		return null;
+	}
+
+	const projectMain = document.querySelectorAll('.project_field');
+	const projectImage = [...document.querySelectorAll('.project_image_img')];
 
 	const staticImage = [];
 	const animatedImage = [];
-	const mobileImage = [];
 
 	for (let i = 1; i <= sumProjects; i++) {
 		staticImage.push(`./img/project_images/${i}-static.png`);
 		animatedImage.push(`./img/project_images/${i}-animated.gif`);
-		mobileImage.push(`./img/project_images/${i}-static-mobile.webp`);
 	}
 
 	projectMain[0].addEventListener('mouseover', (e) => {
@@ -55,6 +54,4 @@ function chooseMode(array, target, field) {
 	}
 }
 
-if (document.getElementsByClassName('project_field').length > 0) {
-	hover(3);
-}
+hover(numberOfProjects);

@@ -1,4 +1,3 @@
-// шрифты
 @font-face {
 	font-family: 'Recursive_Monospace';
 	src: url(/fonts/Recursive_Monospace-Regular.woff2) format('woff2');
@@ -16,8 +15,6 @@
 }
 
 :root {
-	// цвета
-
 	--color-header: #7d7777;
 	--color-links: var(--color-header);
 	--color-main: #e7bb2b;
@@ -28,7 +25,6 @@
 	--color-current-page: #e3c154;
 	--color-border-avatar: var(--color-header);
 
-	// размеры
 	--height-right-panel: 35vh;
 	--font-size-panel: calc(var(--height-right-panel) / 8);
 	--font-size-greetings: clamp(24px, 5vw, 40px);
@@ -45,32 +41,24 @@
 	--margin-bottom-projects: 4em;
 	--width-project-image: 600px;
 
-	// отступы
 	--padding-panel: calc(1vw + 10px);
 
-	// тени
 	--shadow-main: 5px 5px 10px rgb(0 0 0 / 0.7);
 	--shadow-button-big: 0px 10px 10px rgb(0 0 0 / 0.7);
 	--shadow-button-small: 0px 5px 10px rgb(0 0 0 / 0.4);
 	--shadow-footer: 5px 5px 20px rgb(0 0 0 / 0.7);
 
-	// рамки
 	--border-avatar: 10px solid var(--color-border-avatar);
 
-	// трансформации
 	--transition: 0.2s;
 	--scale: scale(1.1);
 
-	// шрифты
 	--main-font: Wellfleet-Regular, sans-serif;
 	--second-font: 'Recursive_Monospace', monospace;
 }
 
-// угол поворота диагонального окна
 $angle-diagonal: 35deg;
 
-//количество проектов на последней странице
 $project-images: 4;
 
-//количество карточек проектов
 $project-count: 4;

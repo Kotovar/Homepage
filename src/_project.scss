@@ -1,5 +1,3 @@
-// настройки карточек проектов - текст, изображения
-
 .project_field {
 	--common-width: 70vw;
 
@@ -49,7 +47,6 @@
 	max-width: var(--width-project-image);
 }
 
-//  span
 .project_features {
 	color: var(--color-font-features);
 
@@ -67,7 +64,6 @@
 	font-weight: bold;
 }
 
-// Кнопки и поля с ними
 .buttons_section {
 	display: flex;
 	column-gap: 2em;
