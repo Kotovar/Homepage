@@ -9,13 +9,13 @@ This is my personal page, which is a portfolio with current data
 
 To use Homepage, you need to have Node.js and npm installed on your system. You can then clone this repository and run the following commands:
 
-`npm install -g webpack` to install webpack globally
+`npm install` to install all dependencies
 
 next need to make in the project directory
 
 `npm link webpack-cli`
 
-`webpack`
+`npm run watch`
 
 open the `dist/index.html` file in your browser
 
@@ -28,7 +28,6 @@ To create this application I used the following technologies:
 - SASS
 - JavaScript
 - Webpack
-- Eslint
 
 ---
 
